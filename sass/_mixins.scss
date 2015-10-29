@@ -1,33 +1,33 @@
 @mixin fontSize($fontSize) {
-    font-size: $fontSize * 1px;
-    font-size: ($fontSize / 10) *1rem;
+	font-size: $fontSize * 1px;
+	font-size: ($fontSize / 10) *1rem;
 }
 
 @mixin bp($point) {
- $large: "(max-width: 960px)";
- $medium: "(max-width: 768px)";
- $small: "(max-width: 480px)";
- $mobile: "(max-width: 320px)";
+  $large: "(max-width: 960px)";
+  $medium: "(max-width: 768px)";
+  $small: "(max-width: 480px)";
+  $mobile: "(max-width: 320px)";
 
- @if $point == large {
-   @media #{$large} { @content; }
- }
- @else if $point == medium {
-   @media #{$medium} { @content; }
- }
- @else if $point == small {
-   @media #{$small}  { @content; }
- }
- @else if $point == mobile {
-     @media #{$mobile} { @content; }
- }
- @else if $point == mini {
-     @media #{$mini} { @content; }
- }
+  @if $point == large {
+    @media #{$large} { @content; }
+  }
+  @else if $point == medium {
+    @media #{$medium} { @content; }
+  }
+  @else if $point == small {
+    @media #{$small}  { @content; }
+  }
+  @else if $point == mobile {
+  	@media #{$mobile} { @content; }
+  }
+  @else if $point == mini {
+  	@media #{$mini} { @content; }
+  }
 }
 
 .flexParent {
- display: flex;
- flex-wrap: wrap;
- flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }

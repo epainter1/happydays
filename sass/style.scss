@@ -1,17 +1,16 @@
 /*
 * Theme Name: My Special Day
 * Theme URI: http://hackeryou.com;
-* Description: Starter theme for building your wedding website. Created by Lizzie and Amie.
+* Description: A starter theme for creating a website for your wedding day.
 * Version: 1.0
 * Author: Lizzie & Amie
-* Author URI: http://lizziecodes.com
+* Author URI: http://amiephipps.com
 */
 
 @import 'mixins';
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
-@import 'sidebar';
 @import 'comments';
 @import 'footer';
 /*
@@ -24,15 +23,6 @@ img {
 	max-width: 100%;
 }
 
-// body {
-// 	color: #333;
-// 	background:white;
-// }
-
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
 
 ul {
 	margin: 0;
@@ -42,19 +32,10 @@ ul {
 	}
 }
 
-
-
-
-
-// .content {
-// 	float: left;
-// 	width: 65%;
-// 	margin-right: 5%;
-// }
-
-// .full {
-// 	width: 100%;
-// }
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
 
 
