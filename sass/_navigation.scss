@@ -1,14 +1,18 @@
-ul.menu {
-	margin: 0;
-	padding: 0;
+.menu {
+	max-width: 1200px;
+	display: block;
+	background: rgba(255, 255, 255, 0.7);
+	margin: 0 auto;
 	li {
 		display: inline;
-		margin-right: 10px;
 		a {
-			color: #333;
-			padding: 10px;
-			background: #333;
-			color: white;
+			color: black;
+			padding: 1% 3%;
+			text-transform: uppercase;
+			display: inline-block;
 		}
 	}
+}
+header .header-container {
+	max-width: 100%;
 }
