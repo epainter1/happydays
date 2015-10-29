@@ -18,13 +18,40 @@
 
 <body <?php body_class(); ?>>
 
-<header>
-  <div class="container">
+  <div class="header">
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'primary'
-    )); ?>
-  </div> <!-- /.container -->
-</header><!--/.header-->
+    <?php
+
+    $onePageQuery = new WP_Query(
+      array(
+        'posts_per_page' => -1,
+        'post_type' => 'couple',
+        'order' => 'ASC'
+        )
+    ); ?>
+
+    <?php if ( $onePageQuery->have_posts() ) : ?>
+
+      <?php while ($onePageQuery->have_posts()) : $onePageQuery->the_post(); ?>
+          <h1><a href="<?php echo home_url(); ?>" id="logo"><?php the_field('spouseone'); ?> &amp; <?php the_field('spousetwo'); ?></a></h1>
+          <h3><?php the_field('weddingdate'); ?></h3>
+      <?php endwhile; ?>
+
+      <?php wp_reset_postdata(); ?>
+
+    <?php else:  ?>
+      [stuff that happens if there aren't any posts]
+    <?php endif; ?>
+    
+  </div>
+
+  <header>
+    <div class="header-container">
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'primary'
+      )); ?>
+    </div> <!-- /.container -->
+  </header><!--/.header-->
+
 
