@@ -1,12 +1,13 @@
 /*
-* Theme Name: HackerYou Starter Theme
+* Theme Name: My Special Day
 * Theme URI: http://hackeryou.com;
-* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Description: Starter theme for building your wedding website. Created by Lizzie and Amie.
 * Version: 1.0
-* Author: HackerYou
-* Author URI: http://hackeryou.com
+* Author: Lizzie & Amie
+* Author URI: http://lizziecodes.com
 */
 
+@import 'mixins';
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
@@ -23,25 +24,37 @@ img {
 	max-width: 100%;
 }
 
-body {
-	color: #333;
-	background: grey;
-}
+// body {
+// 	color: #333;
+// 	background:white;
+// }
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
 }
 
-.full {
-	width: 100%;
-}
+
+
+
+
+// .content {
+// 	float: left;
+// 	width: 65%;
+// 	margin-right: 5%;
+// }
+
+// .full {
+// 	width: 100%;
+// }
 
 
 
