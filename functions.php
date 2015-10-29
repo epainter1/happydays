@@ -70,6 +70,14 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
+
+  wp_enqueue_script(
+  	'sticky', //handle
+  	get_template_directory_uri() . '/js/jquery.sticky.js', //source
+  	array( 'jquery' ), 
+  	null, //version number
+  	true
+  );
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );
@@ -266,3 +274,5 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+show_admin_bar( false );

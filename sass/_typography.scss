@@ -11,10 +11,13 @@
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	h1, h2, h3 {
+	h1, h2 {
 		font-family: 'Sacramento', cursive;
 	}
 	h1 {
 		@include fontSize(50);
+	}
+	a {
+		text-decoration: none;
 	}
 }
