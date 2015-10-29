@@ -7,11 +7,9 @@
 // 	border: 1px solid #ccc;
 // }
 
-@import 'mixins';
-
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	h1, h2, h3 {
+	h1, h2 {
 		font-family: 'Sacramento', cursive;
 	}
 	h1 {
